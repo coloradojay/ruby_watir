@@ -6,6 +6,15 @@ This project assumes Ruby version 2.5.0 and utilizes the current versions of rsp
 Chromedriver (http://brewformulas.org/Chromedriver) is required and assumed to be in your current path.
 
 ## Installation
+Clone the repo:
+```
+git clone https://github.com/coloradojay/ruby_watir.git
+```
+Move into the directory
+```
+cd ruby_watir
+```
+Install the required gems
 ```
 bundle install --binstubs
 ```
@@ -21,7 +30,7 @@ bin/rspec .
 ```
 
 To run a specific test (I.e. test without page object)
-```apple js
+```
 bin/rspec spec/home_page_spec.rb
 ```
 
