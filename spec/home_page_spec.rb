@@ -6,8 +6,8 @@ require 'watir'
 
 describe 'Site Tests' do
   browser = Watir::Browser.new :chrome
-  home_page_url = env['HOME_PAGE_URL']
-  services_page_url = env['SERVICES_PAGE_URL']
+  home_page_url = 'http://www.taxcreditco.com/'
+  services_page_url = 'http://www.taxcreditco.com/services.html'
   discover_services_text = 'Discover our Services'.upcase
 
   before(:each) do
