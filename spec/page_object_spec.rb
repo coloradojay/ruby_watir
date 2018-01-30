@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-require 'dotenv/load'
 require 'rspec'
 require 'watir'
 
@@ -8,10 +7,10 @@ require_relative '../pageObjects/abstract_page'
 require_relative '../pageObjects/home_page'
 require_relative '../pageObjects/services_page'
 
-describe 'My behaviour' do
+describe 'Site Tests' do
 
-  home_page_url = env['HOME_PAGE_URL']
-  services_page_url = env['SERVICES_PAGE_URL']
+  home_page_url = 'http://www.taxcreditco.com/'
+  services_page_url = 'http://www.taxcreditco.com/services.html'
   discover_service_links_text = ['Affordable Care Act Compliance (ACA)',
                                  'Work Opportunity Tax Credit (WOTC)',
                                  'Research & Development Tax Credit (R&D)',

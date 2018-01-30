@@ -1,11 +1,10 @@
 # frozen_string_literal: true
 
-require 'dotenv/load'
 require 'net/http'
 require 'rspec'
 require 'watir'
 
-describe 'Tax Credit Co Home Page' do
+describe 'Site Tests' do
   browser = Watir::Browser.new :chrome
   home_page_url = env['HOME_PAGE_URL']
   services_page_url = env['SERVICES_PAGE_URL']
